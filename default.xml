@@ -45,6 +45,11 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
   <project path="device/sample" name="device/sample" groups="pdk" />
+  <project path="device/samsung/espresso-common" name="android_device_samsung_espresso-common" groups="device,espresso" remote="omap4-aosp" revision="aosp-5.1" />
+  <project path="device/samsung/p3100" name="android_device_samsung_p3100" groups="device,espresso" remote="omap4-aosp" revision="aosp-5.1" />
+  <project path="device/samsung/p3110" name="android_device_samsung_p3110" groups="device,espresso" remote="omap4-aosp" revision="aosp-5.1" />
+  <project path="device/samsung/p5100" name="android_device_samsung_p5100" groups="device,espresso" remote="omap4-aosp" revision="aosp-5.1" />
+  <project path="device/samsung/p5110" name="android_device_samsung_p5110" groups="device,espresso" remote="omap4-aosp" revision="aosp-5.1" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
@@ -467,5 +472,6 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="omap4-aosp" revision="aosp-5.1" />
+  <project path="vendor/ti" name="proprietary_vendor_ti" remote="omap4-aosp" revision="aosp-5.1" />
 </manifest>
