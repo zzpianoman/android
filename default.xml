@@ -277,7 +277,7 @@
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="omap4-aosp" revision="aosp-4.4" groups="pdk" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="omap4-aosp" revision="aosp-4.4" groups="omap4" />
   <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" groups="device,tuna" remote="omap4-aosp" revision="aosp-4.4" />
