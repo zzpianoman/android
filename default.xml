@@ -14,6 +14,9 @@
   <remote  name="cm"
            fetch="https://github.com/cyanogenmod/" />
 
+  <remote  name="omap4-aosp"
+           fetch="https://github.com/OMAP4-AOSP/" />
+
   <default revision="refs/tags/android-6.0.1_r17"
            remote="aosp"
            sync-j="4" />
@@ -439,6 +442,7 @@
   <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="zz" revision="zz-6.0" />
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="zz" revision="zz-6.0" />
   <project path="vendor/ti" name="proprietary_vendor_ti" remote="zz" revision="zz-6.0" />
+  <project path="vendor/widevine" name="proprietary_vendor_widevine" remote="omap4-aosp" revision="aosp-6.0" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="zz" revision="zz-6.0" />
   <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="zz" revision="zz-6.0" /> 
 
