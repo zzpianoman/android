@@ -7,11 +7,14 @@
   <remote  name="zz"
            fetch="https://github.com/zzpianoman/" />
 
+  <remote  name="omap4-aosp"
+           fetch="https://github.com/OMAP4-AOSP/" />
+
   <default revision="refs/tags/android-7.0.0_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk,tradefed" >
+  <project path="build" name="platform/build" remote="zz" revision="zz-7.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -22,7 +25,7 @@
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
+  <project path="bionic" name="platform/bionic" groups="pdk" remote="zz" revision="zz-7.0"/>
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
@@ -293,7 +296,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
+  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="zz" revision="zz-7.0"/>
   <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -302,7 +305,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
+  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" remote="zz" revision="zz-7.0"/>
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -488,11 +491,11 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
   <!-- tuna-specific projects -->
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="zz" revision="zz-6.0" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="zz" revision="zz-7.0" />
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="zz" revision="zz-6.0" />
   <project path="vendor/ti" name="proprietary_vendor_ti" remote="zz" revision="zz-6.0" />
   <project path="vendor/widevine" name="proprietary_vendor_widevine" remote="omap4-aosp" revision="aosp-6.0" />
-  <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="zz" revision="zz-6.0" />
+  <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="zz" revision="zz-7.0" />
   <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="zz" revision="zz-6.0" /> 
 
   <!-- zz vendor -->
